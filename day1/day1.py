@@ -1,4 +1,3 @@
-
 elfFile = open("/home/kat/AOC/day1/input", "r")
 elves = []
 total = 0
