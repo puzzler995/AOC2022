@@ -11,3 +11,18 @@ edition = "2021"
 name = "day1exe"
 path = "day1/day1.rs"
 
+[[bin]]
+name = "day2part1"
+path = "day2/day2part1.rs"
+
+[[bin]]
+name = "day2part2"
+path = "day2/day2part2.rs"
+
+[[bin]]
+name = "day3part1"
+path = "day3/day3part1.rs"
+
+[[bin]]
+name = "day3part2"
+path = "day3/day3part2.rs"
