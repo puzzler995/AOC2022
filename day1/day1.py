@@ -1,4 +1,4 @@
-elfFile = open("/home/kat/AOC/day1/input", "r")
+elfFile = open("/home/kat/AOC2022/day1/input", "r")
 elves = []
 total = 0
 
