@@ -25,48 +25,10 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug unit tests in executable 'day1exe'",
-      "cargo": {
-        "args": [
-          "test",
-          "--no-run",
-          "--bin=day1exe",
-          "--package=AOC2022"
-        ],
-        "filter": {
-          "name": "day1exe",
-          "kind": "bin"
-        }
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
       "name": "Debug executable 'day2part1'",
       "cargo": {
         "args": [
           "build",
-          "--bin=day2part1",
-          "--package=AOC2022"
-        ],
-        "filter": {
-          "name": "day2part1",
-          "kind": "bin"
-        }
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
-      "name": "Debug unit tests in executable 'day2part1'",
-      "cargo": {
-        "args": [
-          "test",
-          "--no-run",
           "--bin=day2part1",
           "--package=AOC2022"
         ],
@@ -99,48 +61,10 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug unit tests in executable 'day2part2'",
-      "cargo": {
-        "args": [
-          "test",
-          "--no-run",
-          "--bin=day2part2",
-          "--package=AOC2022"
-        ],
-        "filter": {
-          "name": "day2part2",
-          "kind": "bin"
-        }
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
       "name": "Debug executable 'day3part1'",
       "cargo": {
         "args": [
           "build",
-          "--bin=day3part1",
-          "--package=AOC2022"
-        ],
-        "filter": {
-          "name": "day3part1",
-          "kind": "bin"
-        }
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
-      "name": "Debug unit tests in executable 'day3part1'",
-      "cargo": {
-        "args": [
-          "test",
-          "--no-run",
           "--bin=day3part1",
           "--package=AOC2022"
         ],
@@ -173,16 +97,15 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug unit tests in executable 'day3part2'",
+      "name": "Debug executable 'day4'",
       "cargo": {
         "args": [
-          "test",
-          "--no-run",
-          "--bin=day3part2",
+          "build",
+          "--bin=day4",
           "--package=AOC2022"
         ],
         "filter": {
-          "name": "day3part2",
+          "name": "day4",
           "kind": "bin"
         }
       },
