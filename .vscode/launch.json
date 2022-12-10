@@ -220,6 +220,42 @@
       },
       "args": [],
       "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'day8part1'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=day8part1",
+          "--package=AOC2022"
+        ],
+        "filter": {
+          "name": "day8part1",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'day8part2'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=day8part2",
+          "--package=AOC2022"
+        ],
+        "filter": {
+          "name": "day8part2",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
     }
   ]
 }
