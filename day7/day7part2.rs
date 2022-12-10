@@ -1,4 +1,4 @@
-use std::{cell::{RefCell}, rc::Rc, mem::needs_drop};
+use std::{cell::{RefCell}, rc::Rc};
 
 struct FileNode {
   name: Option<String>,
