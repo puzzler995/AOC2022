@@ -261,6 +261,7 @@
       "type": "lldb",
       "request": "launch",
       "name": "Debug executable 'day9'",
+      
       "cargo": {
         "args": [
           "build",
@@ -271,7 +272,8 @@
           "name": "day9",
           "kind": "bin"
         }
-      }
+      }, 
+      "stdio": ["${workspaceFolder}/day9/input"]
     }
   ]
 }
