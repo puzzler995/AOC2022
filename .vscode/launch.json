@@ -256,6 +256,22 @@
       },
       "args": [],
       "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'day9'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=day9",
+          "--package=AOC2022"
+        ],
+        "filter": {
+          "name": "day9",
+          "kind": "bin"
+        }
+      }
     }
   ]
 }
