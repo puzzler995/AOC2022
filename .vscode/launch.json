@@ -274,6 +274,23 @@
         }
       }, 
       "stdio": ["${workspaceFolder}/day9/input"]
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'day10'",
+      
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=day10",
+          "--package=AOC2022"
+        ],
+        "filter": {
+          "name": "day10",
+          "kind": "bin"
+        }
+      }
     }
   ]
 }
