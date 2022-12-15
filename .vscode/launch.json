@@ -4,17 +4,20 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-    
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
     {
       "type": "lldb",
       "request": "launch",
       "name": "Debug executable 'day1exe'",
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day1exe",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day1exe", "--package=AOC2022"],
         "filter": {
           "name": "day1exe",
           "kind": "bin"
@@ -28,11 +31,7 @@
       "request": "launch",
       "name": "Debug executable 'day2part1'",
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day2part1",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day2part1", "--package=AOC2022"],
         "filter": {
           "name": "day2part1",
           "kind": "bin"
@@ -46,11 +45,7 @@
       "request": "launch",
       "name": "Debug executable 'day2part2'",
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day2part2",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day2part2", "--package=AOC2022"],
         "filter": {
           "name": "day2part2",
           "kind": "bin"
@@ -64,11 +59,7 @@
       "request": "launch",
       "name": "Debug executable 'day3part1'",
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day3part1",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day3part1", "--package=AOC2022"],
         "filter": {
           "name": "day3part1",
           "kind": "bin"
@@ -82,11 +73,7 @@
       "request": "launch",
       "name": "Debug executable 'day3part2'",
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day3part2",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day3part2", "--package=AOC2022"],
         "filter": {
           "name": "day3part2",
           "kind": "bin"
@@ -100,11 +87,7 @@
       "request": "launch",
       "name": "Debug executable 'day4'",
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day4",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day4", "--package=AOC2022"],
         "filter": {
           "name": "day4",
           "kind": "bin"
@@ -118,11 +101,7 @@
       "request": "launch",
       "name": "Debug executable 'day5part1'",
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day5part1",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day5part1", "--package=AOC2022"],
         "filter": {
           "name": "day5part1",
           "kind": "bin"
@@ -136,11 +115,7 @@
       "request": "launch",
       "name": "Debug executable 'day5part2'",
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day5part2",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day5part2", "--package=AOC2022"],
         "filter": {
           "name": "day5part2",
           "kind": "bin"
@@ -154,11 +129,7 @@
       "request": "launch",
       "name": "Debug executable 'day6part1'",
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day6part1",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day6part1", "--package=AOC2022"],
         "filter": {
           "name": "day6part1",
           "kind": "bin"
@@ -172,11 +143,7 @@
       "request": "launch",
       "name": "Debug executable 'day6part2'",
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day6part2",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day6part2", "--package=AOC2022"],
         "filter": {
           "name": "day6part2",
           "kind": "bin"
@@ -190,11 +157,7 @@
       "request": "launch",
       "name": "Debug executable 'day7part1'",
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day7part1",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day7part1", "--package=AOC2022"],
         "filter": {
           "name": "day7part1",
           "kind": "bin"
@@ -208,11 +171,7 @@
       "request": "launch",
       "name": "Debug executable 'day7part2'",
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day7part2",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day7part2", "--package=AOC2022"],
         "filter": {
           "name": "day7part2",
           "kind": "bin"
@@ -226,11 +185,7 @@
       "request": "launch",
       "name": "Debug executable 'day8part1'",
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day8part1",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day8part1", "--package=AOC2022"],
         "filter": {
           "name": "day8part1",
           "kind": "bin"
@@ -244,11 +199,7 @@
       "request": "launch",
       "name": "Debug executable 'day8part2'",
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day8part2",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day8part2", "--package=AOC2022"],
         "filter": {
           "name": "day8part2",
           "kind": "bin"
@@ -261,31 +212,23 @@
       "type": "lldb",
       "request": "launch",
       "name": "Debug executable 'day9'",
-      
+
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day9",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day9", "--package=AOC2022"],
         "filter": {
           "name": "day9",
           "kind": "bin"
         }
-      }, 
+      },
       "stdio": ["${workspaceFolder}/day9/input"]
     },
     {
       "type": "lldb",
       "request": "launch",
       "name": "Debug executable 'day10'",
-      
+
       "cargo": {
-        "args": [
-          "build",
-          "--bin=day10",
-          "--package=AOC2022"
-        ],
+        "args": ["build", "--bin=day10", "--package=AOC2022"],
         "filter": {
           "name": "day10",
           "kind": "bin"
