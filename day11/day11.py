@@ -7,11 +7,13 @@ class Monkey:
     self.trueID = trueID
     self.falseID = falseID
     self.inspectCount=0
-  def turn(self, monkeylist:list, partOne:bool):
+  def turn(self, monkeylist:list, partOne:bool, bigTest:int):
     for item in self.items:
       item = self.inspect(item)
       if partOne:
         item= item//3
+      else:
+        item=item%bigTest
       if (item%self.test)==0:
         monkeyList[self.trueID].items.append(item)
       else:
@@ -48,6 +50,7 @@ class Monkey:
 def monkeyInput():
   inputfile = open("/home/kat/AOC2022/day11/input", "r")
   monkeyList = []
+  bigTest = 1
   while True:
     line = inputfile.readline()
     if line == '':
@@ -64,15 +67,19 @@ def monkeyInput():
     line = inputfile.readline().strip().split()
     operation = [line[4], line[5]]
     test = int(inputfile.readline().strip().split()[3])
+    bigTest = test * bigTest
     trueID = int(inputfile.readline().strip().split()[5])
     falseID = int(inputfile.readline().strip().split()[5])
     monkey = Monkey(monkeyNumber, items, operation, test, trueID, falseID)
     monkeyList.append(monkey)
   return monkeyList
 monkeyList = monkeyInput()
+bigTest = 1
+for monkey in monkeyList:
+  bigTest = bigTest*monkey.test
 for round in range(0,20):
   for monkey in monkeyList:
-    monkey.turn(monkeyList, True)
+    monkey.turn(monkeyList, True, 0)
 monkey1=0
 monkey2=0
 for monkey in monkeyList:
@@ -83,12 +90,14 @@ for monkey in monkeyList:
     monkey2=monkey.inspectCount
 
 print("Monkey Business: "+str(monkey1*monkey2))
-input()
+
 monkeyList=monkeyInput()
-for round in range(0,20):
-  print(round)
+bigTest = 1
+for monkey in monkeyList:
+  bigTest = bigTest*monkey.test
+for round in range(0,10000):
   for monkey in monkeyList:
-    monkey.turn(monkeyList, False)
+    monkey.turn(monkeyList, False, bigTest)
 monkey1=0
 monkey2=0
 for monkey in monkeyList:
